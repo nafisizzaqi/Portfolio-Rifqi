@@ -10,38 +10,27 @@
 
     <!-- nav -->
     <section>
-        <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 dark:border-gray-600">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <nav id="navbar" class="bg-transparent dark:bg-gray-900 fixed w-full z-20 top-0 start-0 dark:border-gray-600 transition-colors duration-300">
+          <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="image/logo.png" class="h-14" alt="Flowbite Logo">
-                <span class="self-center text-black text-3xl font-thin whitespace-nowrap dark:text-white mr-80">Kang Design</span>
+              <img id="navbar-logo" src="image/logo.png" class="h-14" alt="Logo">
+              <span id="navbar-text" class="self-center text-black text-3xl font-thin whitespace-nowrap dark:text-white mr-80">Kang Design</span>
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"> 
-                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-              </button>
+              <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false"></button>
             </div>
             <div class="ml-96 items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-              <ul class="gap-4 flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                <li>
-                  <a href="#home" class="text-md block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
-                </li>
-                <li>
-                  <a href="#about" class="text-md block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Us</a>
-                </li>
-                <li>
-                  <a href="#skill" class="text-md block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skill</a>
-                </li>
-                <li>
-                  <a href="#project" class="text-md block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">My Project</a>
-                </li>
-                <li>
-                    <a href="#contact" class="text-md block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-                  </li>
+              <ul id="navbar-links" class="gap-4 flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li><a href="#home" class="text-black block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700">Home</a></li>
+                <li><a href="#about" class="text-black block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700">About Us</a></li>
+                <li><a href="#skill" class="text-black block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700">Skill</a></li>
+                <li><a href="#project" class="text- block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700">My Project</a></li>
+                <li><a href="#contact" class="text-black block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700">Contact</a></li>
               </ul>
             </div>
-            </div>
-          </nav>
-     </section>
+          </div>
+        </nav>
+      </section>
 
      <!-- hero -->
       <section id="home" class="pt-56 bg-white">
@@ -54,13 +43,13 @@
                 </div>
             </div>
         </div>
-            <div class="items-center w-full h-56 bg-black relative bottom-10">
+            <div class="items-center w-full h-36  bg-black">
                 <p class="text-center relative top-2 text-3xl text-white font-mono">ILUSTRATOR</p>
             </div>
       </section>
 
       <!-- about -->
-       <section id="about" class="pt-16 pb-20">
+       <section id="about" class="pt-10 pb-10">
         <div class="container mx-auto text-center">
             <div class="flex flex-wrap items-center">
                 <div class="w-full">
@@ -77,11 +66,11 @@
        </section>
 
        <!-- skil -->
-        <section id="skill" class="pt-28 pb-20">
+        <section id="skill" class="pt-20 pb-20">
             <div class="container mx-auto text-center">
                 <div class="flex flex-wrap">
                     <div class="w-full">
-                        <h1 class="text-7xl text-white font-bold">Skill</h1>
+                        <h1 class="text-5xl text-white font-bold relative top-2">Skill</h1>
                     </div>
 
                     <div class="flex mt-28 mx-auto gap-36">
@@ -90,13 +79,14 @@
                             <p class="text-xl font-semibold text-white mt-6">Ibis Paint X</p>
                         </div>
                         <div class="text-center">
+                            <img src="image/skil3.jpg" class="w-60 rounded-lg" alt="">
+                            <p class="text-xl font-semibold text-white mt-6">AdobeIlustrator</p>
+                        </div>
+                        <div class="text-center">
                             <img src="image/skil2.jpg" class="w-60 rounded-lg " alt="">
                             <p class="text-xl font-semibold text-white mt-6">Clip Studio Paint</p>
                         </div>
-                        <div class="text-center">
-                            <img src="image/skil3.jpg" class="w-60 rounded-lg" alt="">
-                            <p class="text-xl font-semibold text-white mt-6">Krita</p>
-                        </div>
+                        
                         
                     </div>
                 </div>
@@ -104,23 +94,23 @@
         </section>
 
         <!-- project -->
-         <section id="project" class="pt-32 pb-28">
+         <section id="project" class="pt-32 pb-24">
             <div class="container mx-auto text-center">
                 <div class="flex flex-wrap items-center">
                     <div class="w-full">
-                        <h1 class="text-7xl text-white font-bold">Project</h1>
+                        <h1 class="text-5xl text-white font-bold">Project</h1>
                     </div>
 
                     <div class="w-full mt-20">
-                        <div class="flex flex-wrap gap-52 mx-24">
-                            <img src="image/project1.jpg" class="w-56 rounded-xl" alt="">
-                            <img src="image/project2.jpg" class="w-56 rounded-xl" alt="">
-                            <img src="image/project3.jpg" class="w-56 rounded-xl" alt="">
+                        <div class="flex flex-wrap gap-52 ml-44">
+                            <img src="image/project1.jpg" class="w-44 rounded-xl" alt="">
+                            <img src="image/project2.jpg" class="w-44 rounded-xl" alt="">
+                            <img src="image/project3.jpg" class="w-44 rounded-xl" alt="">
                         </div>
-                        <div class="flex flex-wrap gap-52 mt-6 mx-24">
-                            <img src="image/project4.jpg" class="w-56 rounded-xl" alt="">
-                            <img src="image/project5.jpg" class="w-56 rounded-xl" alt="">
-                            <img src="image/project6.jpg" class="w-56 rounded-xl" alt="">
+                        <div class="flex flex-wrap gap-52 mt-6 ml-44">
+                            <img src="image/project4.jpg" class="w-44 rounded-xl" alt="">
+                            <img src="image/project5.jpg" class="w-44 rounded-xl" alt="">
+                            <img src="image/project6.jpg" class="w-44 rounded-xl" alt="">
                         </div>
                     </div>
                 </div>
@@ -141,21 +131,21 @@
                 <form class="max-w-md mx-auto mt-10">
 
                     <div class="relative z-0 w-full mb-5 group">
-                        <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900              bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500              focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                        <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300                 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600                 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75                 peer-focus:-translate-y-6">Your name</label>
+                        <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-white              bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600              focus:outline-none focus:ring-0 peer" placeholder=" " required />
+                        <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300                 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-white                 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75                 peer-focus:-translate-y-6">Your name</label>
                     </div>
                     <div class="relative z-0 w-full mb-5 group">
-                        <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent              border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none              focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                        <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform              -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto               peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0            peer-focus:scale-75 peer-focus:-translate-y-6">Your email</label>
+                        <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent              border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none              focus:ring-0 peer" placeholder=" " required />
+                        <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform              -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto               peer-focus:text-white peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0            peer-focus:scale-75 peer-focus:-translate-y-6">Your email</label>
                     </div>
                       
                       <div class="relative z-0 w-full mb-5 group">
-                          <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full              text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600               dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                          <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform                -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600           peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75             peer-focus:-translate-y-6">Phone number</label>
+                          <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full              text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600               focus:outline-none focus:ring-0 peer" placeholder=" " required />
+                          <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform                -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-white           peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75             peer-focus:-translate-y-6">Phone number</label>
                       </div>    
                       <div class="relative z-0 w-full mb-5 group">
-                          <textarea type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent                 border-0 border-b-2 border-gray-300 appearance-none                focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required ></textarea>
-                          <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform              -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600               peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75             peer-focus:-translate-y-6">Comment</label>
+                          <textarea type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent                 border-0 border-b-2 border-gray-300 appearance-none                focus:outline-none focus:ring-0 peer" placeholder=" " required ></textarea>
+                          <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform              -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-white               peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75             peer-focus:-translate-y-6">Comment</label>
                       </div>
                     <button type="submit" class="border border-spacing-1 border-white ml-44 text-white bg-black hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-white font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit </button>
                   </form>
@@ -168,5 +158,7 @@
           <footer class="text-center pt-10 pb-10 bg-black">
             <p class="text-md text-white font-semibold">© 2024 Rifqi Desta M Hak Cipta Dilindungi.</p>
           </footer>
+
+          <script src="script.js"></script>
 </body>
 </html>
