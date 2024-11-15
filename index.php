@@ -100,7 +100,7 @@ $tampil = mysqli_fetch_assoc($query_sql);
             <div class="container mx-auto text-center">
                 <div class="flex flex-wrap">
                     <div class="w-full">
-                        <h1 class="text-5xl text-white font-bold relative top-2">Skill</h1>
+                        <h1 class="text-5xl text-white font-bold relative top-2"><?= $ambildata[0]['title']?></h1>
                     </div>
 
                     <div class="flex mt-28 mx-auto gap-36">
@@ -133,7 +133,7 @@ $tampil = mysqli_fetch_assoc($query_sql);
             <div class="container mx-auto text-center">
                 <div class="flex flex-wrap items-center">
                     <div class="w-full">
-                        <h1 class="text-5xl text-white font-bold">Project</h1>
+                        <h1 class="text-5xl text-white font-bold"><?= $ambildata[0]['title']?></h1>
                     </div>
 
                     <div class="w-full mt-20 grid grid-cols-3 gap-10">
