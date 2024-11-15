@@ -163,28 +163,43 @@ $tampil = mysqli_fetch_assoc($query_sql);
                     <div class="w-[50rem] h-96 bg-black mx-auto mt-10">
                         
 
-                <form action="proses.php" method="post" class="max-w-md mx-auto mt-10">
+                    <form action="proses.php" method="post" class="max-w-md mx-auto mt-10">
 
-                    <div class="relative z-0 w-full mb-5 group">
-                        <input type="text" name="name" id="name" class="block py-2.5 px-0 w-full text-sm text-white              bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600              focus:outline-none focus:ring-0 peer" placeholder=" " required />
-                        <label for="name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300                 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-white                 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75                 peer-focus:-translate-y-6">Your name</label>
-                    </div>
-                    <div class="relative z-0 w-full mb-5 group">
-                        <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent              border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none              focus:ring-0 peer" placeholder=" " required />
-                        <label for="email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform              -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto               peer-focus:text-white peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0            peer-focus:scale-75 peer-focus:-translate-y-6">Your email</label>
-                    </div>
-                    <div class="relative z-0 w-full mb-5 group">
-                        <input type="text" name="phone" id="phone" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent              border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none              focus:ring-0 peer" placeholder=" " required />
-                        <label for="phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform              -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto               peer-focus:text-white peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0            peer-focus:scale-75 peer-focus:-translate-y-6">Phone number</label>
-                    </div>
-                      
-                       
-                      <div class="relative z-0 w-full mb-5 group">
-                          <textarea type="text" name="comment" id="comment" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent                 border-0 border-b-2 border-gray-300 appearance-none                focus:outline-none focus:ring-0 peer" placeholder=" " required ></textarea>
-                          <label for="comment" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform              -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-white               peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75             peer-focus:-translate-y-6">Comment</label>
-                      </div>
-                    <button name="submit" type="submit" class="border border-spacing-1 border-white ml-44 text-white bg-black hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-white font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit </button>
-                  </form>
+<div class="relative z-0 w-full mb-5 group">
+    <input type="text" name="name" id="name" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer" placeholder=" " required />
+    <label for="name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-white peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your name</label>
+</div>
+
+<div class="relative z-0 w-full mb-5 group">
+    <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer" placeholder=" " required />
+    <label for="email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-white peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your email</label>
+</div>
+
+<div class="relative z-0 w-full mb-5 group">
+        <input 
+            type="tel" 
+            name="phone" 
+            id="phone" 
+            class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer" 
+            placeholder=" " 
+            required
+            pattern="[0-9]{10,15}" 
+            title="Please enter a valid phone number (10-15 digits)." 
+        />
+        <label for="phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-white peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number</label>
+    </div>
+
+
+<div class="relative z-0 w-full mb-5 group">
+    <textarea name="comment" id="comment" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer" placeholder=" " required></textarea>
+    <label for="comment" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-white peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Comment</label>
+</div>
+
+<button name="submit" type="submit" class="border border-spacing-1 border-white text-white bg-black hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-white font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center mx-auto block">
+    Submit
+</button>
+</form>
+
   
                     </div>
                 </div>
